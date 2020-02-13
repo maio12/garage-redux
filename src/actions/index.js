@@ -12,7 +12,7 @@ export function fetchCars(garage) {
     };
 }
 
-export function createCar(car, garage, callback) {
+export function createCar(garage, car, callback) {
     const request = fetch(`https://wagon-garage-api.herokuapp.com/${garage}/cars`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
