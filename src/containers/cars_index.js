@@ -6,8 +6,8 @@ import { bindActionCreators } from 'redux';
 
 
 class CarsIndex extends Component {
-       componentDidMount() {
-           this.props.fetchCars();
+       componentWillMount() {
+           this.props.fetchCars(this.props.garage);
        }
      renderCars() {
          return this.props.cars.map((car) => {
@@ -39,7 +39,8 @@ class CarsIndex extends Component {
 
 function mapStateToProps(state) {
     return {
-        cars: state.cars
+        cars: state.cars,
+        garage: state.garage
     }
 }
 
