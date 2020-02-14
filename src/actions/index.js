@@ -30,7 +30,7 @@ export function destroyCar(history, car) {
     const request = fetch(`https://wagon-garage-api.herokuapp.com/cars/${car.id}`, {
             method: 'DELETE'
         }).then(response => response.json())
-        .then(() => history.push(""));
+        .then(() => history.push("/"));
     return {
         type: CAR_DESTROYED,
         payload: request
