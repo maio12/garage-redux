@@ -1,0 +1,100 @@
+.car-container {
+    width: 100%;
+    height: 100%;
+    background: $light-grey;
+    overflow: scroll;
+    align-items: center;
+}
+
+.car-card {
+    margin-top: $l-size;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: $l-size;
+    position: relative;
+    margin: 2px;
+    background: $off-white;
+}
+
+.car-picture {
+    width: 220px;
+    height: 220px;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plate {
+    margin-top: $s-size;
+    width: 195px;
+    padding: $s-size;
+    margin-bottom: $m-size;
+    font-size: $font-size-large;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.delete {
+    position: absolute;
+    width: 120px;
+    bottom: 0;
+    right: 0;
+}
+
+.delete>i {
+    margin-right: $s-size;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #dbdbdb;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $off-white;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+form {
+    position: relative;
+    background: $off-white;
+    padding: $m-size;
+    width: 420px;
+    z-index: 2;
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    padding: $s-size $m-size;
+    margin-left: -2px;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    border: none;
+    background-color: #D23333;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
