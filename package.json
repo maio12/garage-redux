@@ -34,6 +34,5 @@
     "scripts": {
         "start": "webpack-dev-server",
         "deploy": "echo \"You are using react-router. You can't deploy on GitHub Pages\"",
-        "Heroku-postbuild": "yarn run webpack -p --env production"
     }
 }
