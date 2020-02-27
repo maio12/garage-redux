@@ -8,11 +8,13 @@ class CarsShow extends Component {
     handleClick = () => {
         this.props.destroyCar(this.props.history, this.props.car);
     }
+
     componentDidMount() {
         if (!this.props.car) {
             this.props.fetchCars(this.props.match.params.id);
         }
     }
+    
     render() {
         if (!this.props.car) {
             return <p>Loading...</p>;
